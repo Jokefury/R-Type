@@ -1,0 +1,97 @@
+﻿Build started 20/01/2013 22:15:32.
+     1>Project "C:\Users\portal_f\Desktop\Projets\R-Type\R-Type\Server\Server.vcxproj" on node 5 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Server.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\Server.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../Common /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Common\Packman.cpp ..\Common\SafeBool.cpp ..\Common\ThreadPool.cpp ..\Common\WinCondVar.cpp ..\Common\WinMutex.cpp ..\Common\WinSelect.cpp ..\Common\WinServerService.cpp ..\Common\WinTCPService.cpp ..\Common\WinUDPService.cpp ..\Common\Worker.cpp ABullet.cpp AEntity.cpp AMob.cpp BulletHeavy.cpp BulletInfos.cpp BulletManager.cpp BulletMid.cpp BulletPlayer0.cpp BulletPlayer1.cpp BulletPlayer2.cpp BulletSimple.cpp Bydo.cpp Core.cpp Game.cpp GameRequestManager.cpp main.cpp MobManager.cpp MobSpawner.cpp Player.cpp Room.cpp RoomRequestManager.cpp TCPNetworkManager.cpp Tile.cpp UDPNetworkManager.cpp WinGameClock.cpp WinRandom.cpp
+         WinRandom.cpp
+         WinGameClock.cpp
+         UDPNetworkManager.cpp
+         Tile.cpp
+         TCPNetworkManager.cpp
+         RoomRequestManager.cpp
+         Room.cpp
+         Player.cpp
+         MobSpawner.cpp
+         MobManager.cpp
+     1>c:\users\portal_f\desktop\projets\r-type\r-type\server\mobmanager.cpp(44): warning C4101: 'e' : unreferenced local variable
+         main.cpp
+         GameRequestManager.cpp
+         Game.cpp
+         Core.cpp
+     1>c:\users\portal_f\desktop\projets\r-type\r-type\server\core.cpp(235): warning C4101: 'e' : unreferenced local variable
+         Bydo.cpp
+         BulletSimple.cpp
+         BulletPlayer2.cpp
+         BulletPlayer1.cpp
+         BulletPlayer0.cpp
+         BulletMid.cpp
+         Generating Code...
+         Compiling...
+         BulletManager.cpp
+         BulletInfos.cpp
+         BulletHeavy.cpp
+         AMob.cpp
+         AEntity.cpp
+         ABullet.cpp
+         Worker.cpp
+         WinUDPService.cpp
+         WinTCPService.cpp
+         WinServerService.cpp
+         WinSelect.cpp
+         WinMutex.cpp
+         WinCondVar.cpp
+         ThreadPool.cpp
+         SafeBool.cpp
+         Packman.cpp
+         Generating Code...
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\portal_f\Desktop\Projets\R-Type\R-Type\Debug\Server.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Server.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\portal_f\Desktop\Projets\R-Type\R-Type\Debug\Server.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\portal_f\Desktop\Projets\R-Type\R-Type\Debug\Server.lib" /MACHINE:X86 Debug\Packman.obj
+         Debug\SafeBool.obj
+         Debug\ThreadPool.obj
+         Debug\WinCondVar.obj
+         Debug\WinMutex.obj
+         Debug\WinSelect.obj
+         Debug\WinServerService.obj
+         Debug\WinTCPService.obj
+         Debug\WinUDPService.obj
+         Debug\Worker.obj
+         Debug\ABullet.obj
+         Debug\AEntity.obj
+         Debug\AMob.obj
+         Debug\BulletHeavy.obj
+         Debug\BulletInfos.obj
+         Debug\BulletManager.obj
+         Debug\BulletMid.obj
+         Debug\BulletPlayer0.obj
+         Debug\BulletPlayer1.obj
+         Debug\BulletPlayer2.obj
+         Debug\BulletSimple.obj
+         Debug\Bydo.obj
+         Debug\Core.obj
+         Debug\Game.obj
+         Debug\GameRequestManager.obj
+         Debug\main.obj
+         Debug\MobManager.obj
+         Debug\MobSpawner.obj
+         Debug\Player.obj
+         Debug\Room.obj
+         Debug\RoomRequestManager.obj
+         Debug\TCPNetworkManager.obj
+         Debug\Tile.obj
+         Debug\UDPNetworkManager.obj
+         Debug\WinGameClock.obj
+         Debug\WinRandom.obj
+         Server.vcxproj -> C:\Users\portal_f\Desktop\Projets\R-Type\R-Type\Debug\Server.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\portal_f\Desktop\Projets\R-Type\R-Type\Debug\Server.exe;#1" /manifest Debug\Server.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Server.unsuccessfulbuild".
+         Touching "Debug\Server.lastbuildstate".
+     1>Done Building Project "C:\Users\portal_f\Desktop\Projets\R-Type\R-Type\Server\Server.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:25.86

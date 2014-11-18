@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\ICondVar.h" />
+    <ClInclude Include="..\Common\IDlLoader.h" />
+    <ClInclude Include="..\Common\IMutex.h" />
+    <ClInclude Include="..\Common\InitializeError.h" />
+    <ClInclude Include="..\Common\ISelect.h" />
+    <ClInclude Include="..\Common\IServerService.h" />
+    <ClInclude Include="..\Common\IService.h" />
+    <ClInclude Include="..\Common\ITask.h" />
+    <ClInclude Include="..\Common\IThread.h" />
+    <ClInclude Include="..\Common\Packman.h" />
+    <ClInclude Include="..\Common\RTCP.h" />
+    <ClInclude Include="..\Common\SafeBool.h" />
+    <ClInclude Include="..\Common\SafeQueue.h" />
+    <ClInclude Include="..\Common\ScopedLock.h" />
+    <ClInclude Include="..\Common\ServiceClosedException.h" />
+    <ClInclude Include="..\Common\ThreadPool.h" />
+    <ClInclude Include="..\Common\UnixCondVar.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixLibLoader.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixMutex.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixSelect.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixServerService.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixTCPService.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixThread.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixUDPService.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\WinCondVar.h" />
+    <ClInclude Include="..\Common\WinLibLoader.h" />
+    <ClInclude Include="..\Common\WinMutex.h" />
+    <ClInclude Include="..\Common\WinSelect.h" />
+    <ClInclude Include="..\Common\WinServerService.h" />
+    <ClInclude Include="..\Common\WinTCPService.h" />
+    <ClInclude Include="..\Common\WinThread.h" />
+    <ClInclude Include="..\Common\WinUDPService.h" />
+    <ClInclude Include="..\Common\Worker.h" />
+    <ClInclude Include="AEvent.h" />
+    <ClInclude Include="AMenu.h" />
+    <ClInclude Include="BackgroundDrawable.h" />
+    <ClInclude Include="BulletDrawable.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="EnemyDrawable.h" />
+    <ClInclude Include="enumClient.h" />
+    <ClInclude Include="ErrorMenu.h" />
+    <ClInclude Include="EventGameEnd.h" />
+    <ClInclude Include="EventGeneric.h" />
+    <ClInclude Include="EventInput.h" />
+    <ClInclude Include="EventRoomList.h" />
+    <ClInclude Include="ExplosionDrawable.h" />
+    <ClInclude Include="FmodSoundManager.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameRequestManager.h" />
+    <ClInclude Include="IDrawable.h" />
+    <ClInclude Include="IGui.h" />
+    <ClInclude Include="include\SFML\Audio.hpp" />
+    <ClInclude Include="include\SFML\Audio\AudioResource.hpp" />
+    <ClInclude Include="include\SFML\Audio\Listener.hpp" />
+    <ClInclude Include="include\SFML\Audio\Music.hpp" />
+    <ClInclude Include="include\SFML\Audio\Sound.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundBuffer.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundBufferRecorder.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundRecorder.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundStream.hpp" />
+    <ClInclude Include="include\SFML\Config.hpp" />
+    <ClInclude Include="include\SFML\Graphics.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Drawable.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Font.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Glyph.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Image.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Matrix3.hpp" />
+    <ClInclude Include="include\SFML\Graphics\PostFX.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTarget.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderWindow.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Shape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Sprite.hpp" />
+    <ClInclude Include="include\SFML\Graphics\String.hpp" />
+    <ClInclude Include="include\SFML\Graphics\View.hpp" />
+    <ClInclude Include="include\SFML\Network.hpp" />
+    <ClInclude Include="include\SFML\Network\Ftp.hpp" />
+    <ClInclude Include="include\SFML\Network\Http.hpp" />
+    <ClInclude Include="include\SFML\Network\IPAddress.hpp" />
+    <ClInclude Include="include\SFML\Network\Packet.hpp" />
+    <ClInclude Include="include\SFML\Network\Selector.hpp" />
+    <ClInclude Include="include\SFML\Network\SelectorBase.hpp" />
+    <ClInclude Include="include\SFML\Network\SocketHelper.hpp" />
+    <ClInclude Include="include\SFML\Network\Sockets.hpp" />
+    <ClInclude Include="include\SFML\Network\SocketTCP.hpp" />
+    <ClInclude Include="include\SFML\Network\SocketUDP.hpp" />
+    <ClInclude Include="include\SFML\Network\Unix\SocketHelper.hpp" />
+    <ClInclude Include="include\SFML\Network\Win32\SocketHelper.hpp" />
+    <ClInclude Include="include\SFML\System.hpp" />
+    <ClInclude Include="include\SFML\System\Clock.hpp" />
+    <ClInclude Include="include\SFML\System\Lock.hpp" />
+    <ClInclude Include="include\SFML\System\Mutex.hpp" />
+    <ClInclude Include="include\SFML\System\NonCopyable.hpp" />
+    <ClInclude Include="include\SFML\System\Randomizer.hpp" />
+    <ClInclude Include="include\SFML\System\Resource.hpp" />
+    <ClInclude Include="include\SFML\System\Sleep.hpp" />
+    <ClInclude Include="include\SFML\System\Thread.hpp" />
+    <ClInclude Include="include\SFML\System\Unicode.hpp" />
+    <ClInclude Include="include\SFML\System\Unix\Mutex.hpp" />
+    <ClInclude Include="include\SFML\System\Unix\Thread.hpp" />
+    <ClInclude Include="include\SFML\System\Vector2.hpp" />
+    <ClInclude Include="include\SFML\System\Vector3.hpp" />
+    <ClInclude Include="include\SFML\System\Win32\Mutex.hpp" />
+    <ClInclude Include="include\SFML\System\Win32\Thread.hpp" />
+    <ClInclude Include="include\SFML\Window.hpp" />
+    <ClInclude Include="include\SFML\Window\Context.hpp" />
+    <ClInclude Include="include\SFML\Window\Event.hpp" />
+    <ClInclude Include="include\SFML\Window\Input.hpp" />
+    <ClInclude Include="include\SFML\Window\OpenGL.hpp" />
+    <ClInclude Include="include\SFML\Window\VideoMode.hpp" />
+    <ClInclude Include="include\SFML\Window\Window.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowHandle.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowListener.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowSettings.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="ISoundManager.h" />
+    <ClInclude Include="ListRoomMenu.h" />
+    <ClInclude Include="LoadingMenu.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="MenuManager.h" />
+    <ClInclude Include="mobBulletDrawable.h" />
+    <ClInclude Include="Obj.h" />
+    <ClInclude Include="PauseMenu.h" />
+    <ClInclude Include="PlayerAliveDrawable.h" />
+    <ClInclude Include="PoolManager.h" />
+    <ClInclude Include="RequestManager.h" />
+    <ClInclude Include="RoomMenu.h" />
+    <ClInclude Include="ScoresMenu.h" />
+    <ClInclude Include="SFMLDisplay.h" />
+    <ClInclude Include="SFMLDrawable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Packman.cpp" />
+    <ClCompile Include="..\Common\SafeBool.cpp" />
+    <ClCompile Include="..\Common\ThreadPool.cpp" />
+    <ClCompile Include="..\Common\UnixCondVar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixMutex.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixSelect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixServerService.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixTCPService.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixUDPService.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\WinCondVar.cpp" />
+    <ClCompile Include="..\Common\WinMutex.cpp" />
+    <ClCompile Include="..\Common\WinSelect.cpp" />
+    <ClCompile Include="..\Common\WinServerService.cpp" />
+    <ClCompile Include="..\Common\WinTCPService.cpp" />
+    <ClCompile Include="..\Common\WinUDPService.cpp" />
+    <ClCompile Include="..\Common\Worker.cpp" />
+    <ClCompile Include="AEvent.cpp" />
+    <ClCompile Include="AMenu.cpp" />
+    <ClCompile Include="BackgroundDrawable.cpp" />
+    <ClCompile Include="BulletDrawable.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="EnemyDrawable.cpp" />
+    <ClCompile Include="ErrorMenu.cpp" />
+    <ClCompile Include="EventGameEnd.cpp" />
+    <ClCompile Include="EventGeneric.cpp" />
+    <ClCompile Include="EventInput.cpp" />
+    <ClCompile Include="EventRoomList.cpp" />
+    <ClCompile Include="ExplosionDrawable.cpp" />
+    <ClCompile Include="FmodSoundManager.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameRequestManager.cpp" />
+    <ClCompile Include="ListRoomMenu.cpp" />
+    <ClCompile Include="LoadingMenu.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="MenuManager.cpp" />
+    <ClCompile Include="mobBulletDrawable.cpp" />
+    <ClCompile Include="Obj.cpp" />
+    <ClCompile Include="PauseMenu.cpp" />
+    <ClCompile Include="PlayerAliveDrawable.cpp" />
+    <ClCompile Include="RequestManager.cpp" />
+    <ClCompile Include="RoomMenu.cpp" />
+    <ClCompile Include="ScoresMenu.cpp" />
+    <ClCompile Include="SFMLDisplay.cpp" />
+    <ClCompile Include="SFMLDrawable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\SFML\Graphics\Matrix3.inl" />
+    <None Include="include\SFML\Graphics\Rect.inl" />
+    <None Include="include\SFML\Network\Selector.inl" />
+    <None Include="include\SFML\System\Resource.inl" />
+    <None Include="include\SFML\System\ResourcePtr.inl" />
+    <None Include="include\SFML\System\Unicode.inl" />
+    <None Include="include\SFML\System\Vector2.inl" />
+    <None Include="include\SFML\System\Vector3.inl" />
+    <None Include="lib\FMOD\fmodex.dll" />
+    <None Include="lib\FMOD\fmodex64.dll" />
+    <None Include="lib\FMOD\fmodexL.dll" />
+    <None Include="lib\FMOD\fmodexL64.dll" />
+    <None Include="lib\SFML\sfml-audio.dll" />
+    <None Include="lib\SFML\sfml-graphics.dll" />
+    <None Include="lib\SFML\sfml-network.dll" />
+    <None Include="lib\SFML\sfml-system.dll" />
+    <None Include="lib\SFML\sfml-window.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\FMOD\fmodex64_vc.lib" />
+    <Library Include="lib\FMOD\fmodexL64_vc.lib" />
+    <Library Include="lib\FMOD\fmodexL_lcc.lib" />
+    <Library Include="lib\FMOD\fmodexL_vc.lib" />
+    <Library Include="lib\FMOD\fmodex_lcc.lib" />
+    <Library Include="lib\FMOD\fmodex_vc.lib" />
+    <Library Include="lib\SFML\sfml-audio-s-d.lib" />
+    <Library Include="lib\SFML\sfml-graphics-s-d.lib" />
+    <Library Include="lib\SFML\sfml-main-d.lib" />
+    <Library Include="lib\SFML\sfml-main.lib" />
+    <Library Include="lib\SFML\sfml-network-s-d.lib" />
+    <Library Include="lib\SFML\sfml-system-s-d.lib" />
+    <Library Include="lib\SFML\sfml-window-s-d.lib" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0EFF9DFE-EFB2-42F9-8526-7FA0729DD916}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\FMOD SoundSystem\FMOD Programmers API Windows\api\inc;..\Common;..\Client\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\busina_b\Documents\RType\R-Type\R-Type\Client\lib\FMOD;lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

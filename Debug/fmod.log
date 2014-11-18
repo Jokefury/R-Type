@@ -1,0 +1,497 @@
+FMOD: SystemI::init                  : FMOD Ex Version: 00044404
+FMOD: SystemI::init                  : maxchannels = 32, flags = 00000000, extradriverdata = 00000000
+FMOD: SystemI::close                 : 
+FMOD: SystemI::close                 : Stop all sounds
+FMOD: SystemI::close                 : Remove miscllaneous DSP stuff.
+FMOD: SystemI::close                 : done.
+
+FMOD: OutputWASAPI::enumerate        : Enumerating...
+FMOD: OutputWASAPI::enumerate        : Initialise COM library.
+FMOD: OutputWASAPI::enumerate        : Found Driver: "Speakers / HP (2- IDT High Definition Audio CODEC)".
+FMOD: OutputWASAPI::enumerate        : Found Driver: "Headphones (RTC) (2- IDT High Definition Audio CODEC)".
+FMOD: OutputWASAPI::enumerate        : Found Driver: "Line In (2- IDT High Definition Audio CODEC)".
+FMOD: OutputWASAPI::enumerate        : Found Driver: "Rec. Playback (2- IDT High Definition Audio CODEC)".
+FMOD: OutputWASAPI::enumerate        : Found Driver: "Integrated Microphone Array (2- IDT High Definition Audio CODEC)".
+FMOD: OutputWASAPI::enumerate        : Found Driver: "Microphone (2- IDT High Definition Audio CODEC)".
+FMOD: OutputWASAPI::enumerate        : Done.
+FMOD: OutputWASAPI::initEx           : Initialising...
+FMOD: OutputWASAPI::initEx           : Done.
+FMOD: SystemI::init                  : Set up software engine
+FMOD: Thread::initThread             : Initializing FMOD (WASAPI) feeder thread.  priority 0
+FMOD: Thread::initThread             : - Stacksize 0.  Stack pointer 00000000 : usesemaphore = 0 : sleeptime = 0
+FMOD: Thread::callback               : * FMOD (WASAPI) feeder thread started
+FMOD: Thread::initThread             : done.
+FMOD: OutputWASAPI::feederUpdate     : WASAPI feeder thread set to 'Audio' characteristic
+FMOD: Thread::initThread             : Initializing FMOD mixer thread.  priority 2
+FMOD: Thread::initThread             : - Stacksize 49152.  Stack pointer 00000000 : usesemaphore = 1 : sleeptime = 0
+FMOD: Thread::callback               : * FMOD mixer thread started
+FMOD: Thread::initThread             : done.
+FMOD: SystemI::init                  : Set up emulated output
+FMOD: SystemI::init                  : create the channel pool
+FMOD: SystemI::init                  : Set up streamer
+FMOD: Thread::initThread             : Initializing FMOD stream thread.  priority 2
+FMOD: Thread::initThread             : - Stacksize 49152.  Stack pointer 00000000 : usesemaphore = 0 : sleeptime = 10
+FMOD: Thread::callback               : * FMOD stream thread started
+FMOD: Thread::initThread             : done.
+FMOD: SystemI::init                  : done
+
+FMOD: SystemI::createSoundInternal   : filename = ../Client/assets/music.mp3 : mode 000000c8
+FMOD: SystemI::createSoundInternal   : 21 codecs found.  Scan all until one succeeds
+FMOD: CodecTag::openInternal         : attempting to open ID3 or ASF tags..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B37FA0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecCDDA::openInternal        : attempting to open as CDDA..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B39020)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFSB5::openInternal        : attempting to open as FSB5..
+FMOD: CodecFSB5::headerReadCheck     : Header check failed. Not an FSB5
+FMOD: Codec::release                 : 
+FMOD: CodecFSB5::closeInternal       : 
+FMOD: CodecFSB5::closeInternal       : done
+FMOD: Plugin::release                : (07B39020)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFSB::openInternal         : attempting to open as FSB..
+FMOD: CodecFSB::openInternal         : Header check failed.  Not an FSB
+FMOD: Codec::release                 : 
+FMOD: CodecFSB::closeInternal        : 
+FMOD: CodecFSB::closeInternal        : done
+FMOD: Plugin::release                : (07B39020)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecVAG::openInternal         : attempting to open as VAG..
+FMOD: CodecVAG::openInternal         : 'VAG' ID check failed [ˇ˚ê]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B4C5F8)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecWav::openInternal         : attempting to open as WAV..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B39020)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecOggVorbis::openInternal   : attempting to open as OGG..
+FMOD: CodecOggVorbis::openInternal   : failed to open as ogg
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B4C5F8)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecAIFF::openInternal        : attempting to open as AIFF..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B39020)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFLAC::openInternal        : attempting to open as FLAC..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B39020)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMOD::openInternal         : attempting to open as MOD..
+FMOD: CodecMOD::openInternal         : 'M.K.' etc ID check failed [¿Ò4]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B4C5F8)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecS3M::openInternal         : attempting to open as S3M..
+FMOD: CodecS3M::openInternal         : 'SCRM' ID check failed [FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B4C5F8)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecXM::openInternal          : attempting to open as XM..
+FMOD: CodecXM::openInternal          : 'Extended Module: ' ID check failed [ˇ˚êD]
+FMOD: Codec::release                 : 
+FMOD: CodecXM::closeInternal         : 3585
+FMOD: CodecXM::closeInternal         : done
+FMOD: Plugin::release                : (07B4C5F8)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecIT::openInternal          : attempting to open as IT..
+FMOD: CodecIT::openInternal          : 'IMPM' etc ID check failed [ˇ˚êD]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B4C5F8)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMIDI::openInternal        : attempting to open as MIDI..
+FMOD: CodecMIDI::openInternal        : 'HThd' ID check failed [ˇ˚êD]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B4C5F8)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecDLS::openInternal         : attempting to open as DLS..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B39020)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecASF::openInternal         : attempting to open as ASF..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B39020)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMPEG::openInternal        : attempting to open as MPEG..
+FMOD: SystemI::createSoundInternal   : Format has 0 subsounds.
+FMOD: SystemI::createSoundInternal   : Create as FMOD_CREATESTREAM
+FMOD: System::createSoundInternal    : decode buffersize = 17280 : blocksize = 1152 : format = 2
+FMOD: SystemI::createSample          : mode 000000ca length 17280 samples, lengthbytes 4658759
+FMOD: SystemI::createSample          : subsamples = 1, channels = 2
+FMOD: SystemI::createSample          : subsample 0.  output = 001AE9B0
+FMOD: SystemI::createSample          : mSoftware = 001AE9B0
+FMOD: OutputSoftware::createSample   : lengthpcm 17280, lengthbytes 4658759, channels 2, format 2, freq 44100, mode 000000ca
+FMOD: OutputSoftware::createSample   : done
+FMOD: SystemI::createSample          : done
+FMOD: System::createSoundInternal    : Seek stream to start
+FMOD: System::createSoundInternal    : flush stream buffer
+FMOD: System::createSoundInternal    : flush successful.
+FMOD: System::createSoundInternal    : switch file handle from small blocking single buffered to large nonblocking doublebuffered.
+FMOD: Thread::initThread             :     Initializing FMOD file thread.  priority 1
+FMOD: Thread::initThread             :     - Stacksize 8192.  Stack pointer 00000000 : usesemaphore = 0 : sleeptime = 10
+FMOD: Thread::callback               :     * FMOD file thread started
+FMOD: Thread::initThread             :     done.
+FMOD: SystemI::createSoundInternal   : No name found in file, use filename.
+FMOD: SystemI::createSoundInternal   : done.  OpenState now = FMOD_OPENSTATE_READY.
+
+FMOD: SystemI::createSoundInternal   : filename = ../Client/assets/laser.mp3 : mode 000000c8
+FMOD: SystemI::createSoundInternal   : 21 codecs found.  Scan all until one succeeds
+FMOD: CodecTag::openInternal         : attempting to open ID3 or ASF tags..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6BA68)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecCDDA::openInternal        : attempting to open as CDDA..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFSB5::openInternal        : attempting to open as FSB5..
+FMOD: CodecFSB5::headerReadCheck     : Header check failed. Not an FSB5
+FMOD: Codec::release                 : 
+FMOD: CodecFSB5::closeInternal       : 
+FMOD: CodecFSB5::closeInternal       : done
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFSB::openInternal         : attempting to open as FSB..
+FMOD: CodecFSB::openInternal         : Header check failed.  Not an FSB
+FMOD: Codec::release                 : 
+FMOD: CodecFSB::closeInternal        : 
+FMOD: CodecFSB::closeInternal        : done
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecVAG::openInternal         : attempting to open as VAG..
+FMOD: CodecVAG::openInternal         : 'VAG' ID check failed [ˇ˚ê]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecWav::openInternal         : attempting to open as WAV..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecOggVorbis::openInternal   : attempting to open as OGG..
+FMOD: CodecOggVorbis::openInternal   : failed to open as ogg
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecAIFF::openInternal        : attempting to open as AIFF..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFLAC::openInternal        : attempting to open as FLAC..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMOD::openInternal         : attempting to open as MOD..
+FMOD: CodecMOD::openInternal         : 'M.K.' etc ID check failed [	i‚‡]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecS3M::openInternal         : attempting to open as S3M..
+FMOD: CodecS3M::openInternal         : 'SCRM' ID check failed [FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecXM::openInternal          : attempting to open as XM..
+FMOD: CodecXM::openInternal          : 'Extended Module: ' ID check failed [ˇ˚êd]
+FMOD: Codec::release                 : 
+FMOD: CodecXM::closeInternal         : 3585
+FMOD: CodecXM::closeInternal         : done
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecIT::openInternal          : attempting to open as IT..
+FMOD: CodecIT::openInternal          : 'IMPM' etc ID check failed [ˇ˚êd]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMIDI::openInternal        : attempting to open as MIDI..
+FMOD: CodecMIDI::openInternal        : 'HThd' ID check failed [ˇ˚êd]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecDLS::openInternal         : attempting to open as DLS..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecASF::openInternal         : attempting to open as ASF..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B6CB90)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMPEG::openInternal        : attempting to open as MPEG..
+FMOD: SystemI::createSoundInternal   : Format has 0 subsounds.
+FMOD: SystemI::createSoundInternal   : Create as FMOD_CREATESTREAM
+FMOD: System::createSoundInternal    : decode buffersize = 17280 : blocksize = 1152 : format = 2
+FMOD: SystemI::createSample          : mode 000000ca length 17280 samples, lengthbytes 16658
+FMOD: SystemI::createSample          : subsamples = 1, channels = 2
+FMOD: SystemI::createSample          : subsample 0.  output = 001AE9B0
+FMOD: SystemI::createSample          : mSoftware = 001AE9B0
+FMOD: OutputSoftware::createSample   : lengthpcm 17280, lengthbytes 16658, channels 2, format 2, freq 44100, mode 000000ca
+FMOD: OutputSoftware::createSample   : done
+FMOD: SystemI::createSample          : done
+FMOD: System::createSoundInternal    : Seek stream to start
+FMOD: System::createSoundInternal    : flush stream buffer
+FMOD: System::createSoundInternal    : flush successful.
+FMOD: System::createSoundInternal    : switch file handle from small blocking single buffered to large nonblocking doublebuffered.
+FMOD: SystemI::createSoundInternal   : No name found in file, use filename.
+FMOD: SystemI::createSoundInternal   : done.  OpenState now = FMOD_OPENSTATE_READY.
+
+FMOD: SystemI::createSoundInternal   : filename = ../Client/assets/destroy.mp3 : mode 000000c8
+FMOD: SystemI::createSoundInternal   : 21 codecs found.  Scan all until one succeeds
+FMOD: CodecTag::openInternal         : attempting to open ID3 or ASF tags..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecCDDA::openInternal        : attempting to open as CDDA..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFSB5::openInternal        : attempting to open as FSB5..
+FMOD: CodecFSB5::headerReadCheck     : Header check failed. Not an FSB5
+FMOD: Codec::release                 : 
+FMOD: CodecFSB5::closeInternal       : 
+FMOD: CodecFSB5::closeInternal       : done
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFSB::openInternal         : attempting to open as FSB..
+FMOD: CodecFSB::openInternal         : Header check failed.  Not an FSB
+FMOD: Codec::release                 : 
+FMOD: CodecFSB::closeInternal        : 
+FMOD: CodecFSB::closeInternal        : done
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecVAG::openInternal         : attempting to open as VAG..
+FMOD: CodecVAG::openInternal         : 'VAG' ID check failed [ˇ˚ê]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecWav::openInternal         : attempting to open as WAV..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecOggVorbis::openInternal   : attempting to open as OGG..
+FMOD: CodecOggVorbis::openInternal   : failed to open as ogg
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecAIFF::openInternal        : attempting to open as AIFF..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFLAC::openInternal        : attempting to open as FLAC..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMOD::openInternal         : attempting to open as MOD..
+FMOD: CodecMOD::openInternal         : 'M.K.' etc ID check failed [pﬂV]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecS3M::openInternal         : attempting to open as S3M..
+FMOD: CodecS3M::openInternal         : 'SCRM' ID check failed [FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecXM::openInternal          : attempting to open as XM..
+FMOD: CodecXM::openInternal          : 'Extended Module: ' ID check failed [ˇ˚êd]
+FMOD: Codec::release                 : 
+FMOD: CodecXM::closeInternal         : 3585
+FMOD: CodecXM::closeInternal         : done
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecIT::openInternal          : attempting to open as IT..
+FMOD: CodecIT::openInternal          : 'IMPM' etc ID check failed [ˇ˚êd]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMIDI::openInternal        : attempting to open as MIDI..
+FMOD: CodecMIDI::openInternal        : 'HThd' ID check failed [ˇ˚êd]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecDLS::openInternal         : attempting to open as DLS..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecASF::openInternal         : attempting to open as ASF..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07B8BEB0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMPEG::openInternal        : attempting to open as MPEG..
+FMOD: SystemI::createSoundInternal   : Format has 0 subsounds.
+FMOD: SystemI::createSoundInternal   : Create as FMOD_CREATESTREAM
+FMOD: System::createSoundInternal    : decode buffersize = 17280 : blocksize = 1152 : format = 2
+FMOD: SystemI::createSample          : mode 000000ca length 17280 samples, lengthbytes 17622
+FMOD: SystemI::createSample          : subsamples = 1, channels = 2
+FMOD: SystemI::createSample          : subsample 0.  output = 001AE9B0
+FMOD: SystemI::createSample          : mSoftware = 001AE9B0
+FMOD: OutputSoftware::createSample   : lengthpcm 17280, lengthbytes 17622, channels 2, format 2, freq 44100, mode 000000ca
+FMOD: OutputSoftware::createSample   : done
+FMOD: SystemI::createSample          : done
+FMOD: System::createSoundInternal    : Seek stream to start
+FMOD: System::createSoundInternal    : flush stream buffer
+FMOD: System::createSoundInternal    : flush successful.
+FMOD: System::createSoundInternal    : switch file handle from small blocking single buffered to large nonblocking doublebuffered.
+FMOD: SystemI::createSoundInternal   : No name found in file, use filename.
+FMOD: SystemI::createSoundInternal   : done.  OpenState now = FMOD_OPENSTATE_READY.
+
+FMOD: SystemI::createSoundInternal   : filename = ../Client/assets/music_boss.mp3 : mode 000000c8
+FMOD: SystemI::createSoundInternal   : 21 codecs found.  Scan all until one succeeds
+FMOD: CodecTag::openInternal         : attempting to open ID3 or ASF tags..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecCDDA::openInternal        : attempting to open as CDDA..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFSB5::openInternal        : attempting to open as FSB5..
+FMOD: CodecFSB5::headerReadCheck     : Header check failed. Not an FSB5
+FMOD: Codec::release                 : 
+FMOD: CodecFSB5::closeInternal       : 
+FMOD: CodecFSB5::closeInternal       : done
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFSB::openInternal         : attempting to open as FSB..
+FMOD: CodecFSB::openInternal         : Header check failed.  Not an FSB
+FMOD: Codec::release                 : 
+FMOD: CodecFSB::closeInternal        : 
+FMOD: CodecFSB::closeInternal        : done
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecVAG::openInternal         : attempting to open as VAG..
+FMOD: CodecVAG::openInternal         : 'VAG' ID check failed [ˇ˚ê]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecWav::openInternal         : attempting to open as WAV..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecOggVorbis::openInternal   : attempting to open as OGG..
+FMOD: CodecOggVorbis::openInternal   : failed to open as ogg
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecAIFF::openInternal        : attempting to open as AIFF..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecFLAC::openInternal        : attempting to open as FLAC..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMOD::openInternal         : attempting to open as MOD..
+FMOD: CodecMOD::openInternal         : 'M.K.' etc ID check failed [ˇˇˇ˚]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecS3M::openInternal         : attempting to open as S3M..
+FMOD: CodecS3M::openInternal         : 'SCRM' ID check failed [FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecXM::openInternal          : attempting to open as XM..
+FMOD: CodecXM::openInternal          : 'Extended Module: ' ID check failed [ˇ˚êD]
+FMOD: Codec::release                 : 
+FMOD: CodecXM::closeInternal         : 3585
+FMOD: CodecXM::closeInternal         : done
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecIT::openInternal          : attempting to open as IT..
+FMOD: CodecIT::openInternal          : 'IMPM' etc ID check failed [ˇ˚êD]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMIDI::openInternal        : attempting to open as MIDI..
+FMOD: CodecMIDI::openInternal        : 'HThd' ID check failed [ˇ˚êD]
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecDLS::openInternal         : attempting to open as DLS..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecASF::openInternal         : attempting to open as ASF..
+FMOD: Codec::release                 : 
+FMOD: Plugin::release                : (07BABAE0)
+FMOD: Plugin::release                : done
+FMOD: Codec::release                 : done
+FMOD: CodecMPEG::openInternal        : attempting to open as MPEG..
+FMOD: SystemI::createSoundInternal   : Format has 0 subsounds.
+FMOD: SystemI::createSoundInternal   : Create as FMOD_CREATESTREAM
+FMOD: System::createSoundInternal    : decode buffersize = 17280 : blocksize = 1152 : format = 2
+FMOD: SystemI::createSample          : mode 000000ca length 17280 samples, lengthbytes 4480070
+FMOD: SystemI::createSample          : subsamples = 1, channels = 2
+FMOD: SystemI::createSample          : subsample 0.  output = 001AE9B0
+FMOD: SystemI::createSample          : mSoftware = 001AE9B0
+FMOD: OutputSoftware::createSample   : lengthpcm 17280, lengthbytes 4480070, channels 2, format 2, freq 44100, mode 000000ca
+FMOD: OutputSoftware::createSample   : done
+FMOD: SystemI::createSample          : done
+FMOD: System::createSoundInternal    : Seek stream to start
+FMOD: System::createSoundInternal    : flush stream buffer
+FMOD: System::createSoundInternal    : flush successful.
+FMOD: System::createSoundInternal    : switch file handle from small blocking single buffered to large nonblocking doublebuffered.
+FMOD: SystemI::createSoundInternal   : No name found in file, use filename.
+FMOD: SystemI::createSoundInternal   : done.  OpenState now = FMOD_OPENSTATE_READY.
+

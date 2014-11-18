@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\ICondVar.h" />
+    <ClInclude Include="..\Common\IDlLoader.h" />
+    <ClInclude Include="..\Common\IMutex.h" />
+    <ClInclude Include="..\Common\InitializeError.h" />
+    <ClInclude Include="..\Common\ISelect.h" />
+    <ClInclude Include="..\Common\IServerService.h" />
+    <ClInclude Include="..\Common\IService.h" />
+    <ClInclude Include="..\Common\ITask.h" />
+    <ClInclude Include="..\Common\IThread.h" />
+    <ClInclude Include="..\Common\Packman.h" />
+    <ClInclude Include="..\Common\RTCP.h" />
+    <ClInclude Include="..\Common\SafeBool.h" />
+    <ClInclude Include="..\Common\SafeQueue.h" />
+    <ClInclude Include="..\Common\ScopedLock.h" />
+    <ClInclude Include="..\Common\ServiceClosedException.h" />
+    <ClInclude Include="..\Common\ThreadPool.h" />
+    <ClInclude Include="..\Common\UnixCondVar.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixLibLoader.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixMutex.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixSelect.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixServerService.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixTCPService.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixThread.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnixUDPService.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\WinCondVar.h" />
+    <ClInclude Include="..\Common\WinLibLoader.h" />
+    <ClInclude Include="..\Common\WinMutex.h" />
+    <ClInclude Include="..\Common\WinSelect.h" />
+    <ClInclude Include="..\Common\WinServerService.h" />
+    <ClInclude Include="..\Common\WinTCPService.h" />
+    <ClInclude Include="..\Common\WinThread.h" />
+    <ClInclude Include="..\Common\WinUDPService.h" />
+    <ClInclude Include="..\Common\Worker.h" />
+    <ClInclude Include="ABullet.h" />
+    <ClInclude Include="AEntity.h" />
+    <ClInclude Include="AMob.h" />
+    <ClInclude Include="BulletHeavy.h" />
+    <ClInclude Include="BulletInfos.h" />
+    <ClInclude Include="BulletManager.h" />
+    <ClInclude Include="BulletMid.h" />
+    <ClInclude Include="BulletPlayer0.h" />
+    <ClInclude Include="BulletPlayer1.h" />
+    <ClInclude Include="BulletPlayer2.h" />
+    <ClInclude Include="BulletSimple.h" />
+    <ClInclude Include="Bydo.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameRequestManager.h" />
+    <ClInclude Include="IGameClock.h" />
+    <ClInclude Include="MobManager.h" />
+    <ClInclude Include="MobSpawner.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Pool.h" />
+    <ClInclude Include="RequestManager.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="RoomRequestManager.h" />
+    <ClInclude Include="TCPNetworkManager.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="UDPNetworkManager.h" />
+    <ClInclude Include="UnixGameClock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="User.h" />
+    <ClInclude Include="WinGameClock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Packman.cpp" />
+    <ClCompile Include="..\Common\SafeBool.cpp" />
+    <ClCompile Include="..\Common\ThreadPool.cpp" />
+    <ClCompile Include="..\Common\UnixCondVar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixMutex.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixSelect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixServerService.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixTCPService.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnixUDPService.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\WinCondVar.cpp" />
+    <ClCompile Include="..\Common\WinMutex.cpp" />
+    <ClCompile Include="..\Common\WinSelect.cpp" />
+    <ClCompile Include="..\Common\WinServerService.cpp" />
+    <ClCompile Include="..\Common\WinTCPService.cpp" />
+    <ClCompile Include="..\Common\WinUDPService.cpp" />
+    <ClCompile Include="..\Common\Worker.cpp" />
+    <ClCompile Include="ABullet.cpp" />
+    <ClCompile Include="AEntity.cpp" />
+    <ClCompile Include="AMob.cpp" />
+    <ClCompile Include="BulletHeavy.cpp" />
+    <ClCompile Include="BulletInfos.cpp" />
+    <ClCompile Include="BulletManager.cpp" />
+    <ClCompile Include="BulletMid.cpp" />
+    <ClCompile Include="BulletPlayer0.cpp" />
+    <ClCompile Include="BulletPlayer1.cpp" />
+    <ClCompile Include="BulletPlayer2.cpp" />
+    <ClCompile Include="BulletSimple.cpp" />
+    <ClCompile Include="Bydo.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameRequestManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MobManager.cpp" />
+    <ClCompile Include="MobSpawner.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="RoomRequestManager.cpp" />
+    <ClCompile Include="TCPNetworkManager.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="UDPNetworkManager.cpp" />
+    <ClCompile Include="UnixGameClock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="WinGameClock.cpp" />
+    <ClCompile Include="WinRandom.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AD500FCD-5A9E-4412-BAF6-C1086DDA55CB}</ProjectGuid>
+    <RootNamespace>Server</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Common</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
